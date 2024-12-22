@@ -14,7 +14,7 @@
       
       { "src": "/product/(.*)", "dest": "/index.html" },
       { "src": "/collections", "dest": "/index.html" },
-     { "src": "/cart/(.*)", "dest": "/index.html" },
+     { "src": "/cart/", "dest": "/index.html" },
      { "src": "/admin", "dest": "/index.html" },
      { "src": "/admin/login", "dest": "/index.html" },
      { "src": "/admin/signup", "dest": "/index.html" },

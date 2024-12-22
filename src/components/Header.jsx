@@ -117,10 +117,12 @@ const Header = () => {
           <div className="flex items-center gap-6 flex-1">
             {/* Logo */}
             <div className="flex-shrink-0 group cursor-pointer">
-              <div className="text-xl md:text-2xl font-bold bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">
+             <Link to={'/'}>
+             <div className="text-xl md:text-2xl font-bold bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">
                 ⚡️ Mytalorzone
                 <span className="text-xs text-black font-normal ml-2">by Sophiya</span>
               </div>
+              </Link>
             </div>
 
             {/* Search Bar */}
