@@ -93,7 +93,7 @@ const ProductDetail = () => {
   if (!product) return null;
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-8">
+    <div className="mt-20 max-w-7xl mx-auto px-4 py-8">
       {addToCartMessage && (
         <div className="mb-4 p-3 bg-green-100 text-green-700 rounded">
           {addToCartMessage}

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 const Hero = () => {
   return (
-    <section className="relative h-screen min-h-[600px] overflow-hidden">
+    <section className="mt-10 relative h-screen min-h-[600px] overflow-hidden">
       {/* Background Image with Parallax Effect */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat transform scale-105 transition-transform duration-3000"

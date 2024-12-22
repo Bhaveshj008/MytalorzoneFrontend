@@ -11,11 +11,29 @@ import { OrderModal } from './OrderModal';
 import { loadRazorpay } from '../../utils/loadRazorpay';
 import api from '../../api';
 
+
 const Cart = () => {
     const navigate = useNavigate();
     const userData = JSON.parse(localStorage.getItem('user') || '{}');
     const userId = userData?.userData?.userId;
 
+
+    if (!userId) {
+        return (
+            <div className="min-h-[400px] flex items-center justify-center text-center  p-6 rounded-lg shadow-xl">
+                <div className="max-w-md w-full">
+                <p className="text-2xl font-semibold mb-4 bg-gradient-to-r from-orange-400 to-orange-700 bg-clip-text text-transparent">
+                    Oops! You need to log in first.
+                </p>
+                <p className="text-gray-600 text-lg">
+                    Please log in to access the cart. It only takes a moment!
+                </p>
+                    
+                </div>
+            </div>
+        );
+    }
+    
     const { cartItems, products, loading, error, setCartItems, setError } = useCart(userId);
 
     const [isModalOpen, setModalOpen] = useState(false);
@@ -86,7 +104,7 @@ const Cart = () => {
     }
 
     return (
-        <div className="max-w-7xl mx-auto px-4 py-8">
+        <div className="mt-24 max-w-7xl mx-auto px-4 py-8">
             <h1 className="text-3xl font-bold mb-8">Shopping Cart</h1>
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">

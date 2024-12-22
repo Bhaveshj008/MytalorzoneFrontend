@@ -109,7 +109,7 @@ const Header = () => {
   );
 
   return (
-    <header className=" top-0 left-0 right-0 z-50 bg-white shadow-md">
+    <header className=" fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
       <div className="max-w-7xl mx-auto relative">
         {/* Main Header */}
         <div className="flex items-center justify-between p-4 gap-4">
@@ -192,9 +192,9 @@ const Header = () => {
           <div className="lg:hidden absolute top-full left-0 right-0 bg-white shadow-lg border-t border-gray-100">
             <nav className="flex flex-col">
               {navItems.map(item => (
-                <a
+                <Link
                   key={item.id}
-                  href={`#${item.id}`}
+                  to={`${item.link}`}
                   onClick={() => {
                     setActiveTab(item.id);
                     setIsMenuOpen(false);
@@ -205,7 +205,7 @@ const Header = () => {
                 >
                   <item.icon className="w-5 h-5" />
                   <span>{item.label}</span>
-                </a>
+                </Link>
               ))}
 
               {/* Mobile Profile Section */}

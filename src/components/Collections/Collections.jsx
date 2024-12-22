@@ -32,7 +32,7 @@ const Collections = () => {
   }
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-8">
+    <div className="max-w-7xl mx-auto mt-16 px-4 py-8">
       <CategoryFilter 
         selectedCategory={selectedCategory} 
         onCategoryChange={setSelectedCategory} 
