@@ -29,7 +29,7 @@ const Hero = () => {
               Elevate Your Style
             </span>
             <span className="block text-3xl md:text-5xl lg:text-6xl text-gray-200 mt-2 transform transition-all duration-700 animate-fade-in-up delay-200">
-              With Timeless Elegance
+              With Mytalorzone
             </span>
           </h1>
 
