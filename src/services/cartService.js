@@ -21,7 +21,7 @@ export const addToCart = async (userId, productId, quantity) => {
       return { success: false, message: response.data.message };
     }
   } catch (error) {
-    return { success: false, message: error.message || 'Something went wrong' };
+    return { success: false, message: 'Please login to add product is cart' || 'Something went wrong' };
   }
 };
 

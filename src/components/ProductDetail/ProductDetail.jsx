@@ -4,6 +4,7 @@ import { Loader2 } from 'lucide-react';
 import { addToCart } from '../../services/cartService';
 import api from '../../api';
 
+
 import ProductImage from './ProductImage';
 import RatingStars from './RatingStars';
 import QuantityControls from './QuantityControls';
@@ -127,6 +128,7 @@ const ProductDetail = () => {
           >
             Add to Cart
           </button>
+          
 
           <QuantityControls
             quantity={quantity}
