@@ -120,7 +120,7 @@ const Header = () => {
              <Link to={'/'}>
              <div className="text-xl md:text-2xl font-bold bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">
                 ⚡️ Mytalorzone
-                <span className="text-xs text-black font-normal ml-2">by Sophiya</span>
+                <span className="text-xs text-black font-normal ml-2">by Sahiba</span>
               </div>
               </Link>
             </div>
