@@ -1,11 +1,23 @@
 {
     "version": 2,
-    
-    "routes": [
+    "builds": [
       {
-        "src": "/(.*)",
-        "dest": "/index.html"
+        "src": "package.json",
+        "use": "@vercel/static-build",
+        "config": {
+          "distDir": "dist"
+        }
       }
+    ],
+    "routes": [
+
+      
+      { "src": "/product/(.*)", "dest": "/index.html" },
+      { "src": "/collections", "dest": "/index.html" },
+     { "src": "/cart/(.*)", "dest": "/index.html" },
+      { "src": "/admin/(.*)", "dest": "/dist/index.html" }
+        
+        
     ]
   }
   
